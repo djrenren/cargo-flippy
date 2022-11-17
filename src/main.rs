@@ -93,4 +93,5 @@ fn main() {
         lock.flush().unwrap();
         sleep(Duration::from_millis(25));
     }
+    write!(lock, "\n").unwrap();
 }
