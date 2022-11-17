@@ -3,5 +3,6 @@ name = "cargo-flippy"
 version = "1.0.0"
 edition = "2021"
 license = "MIT"
+description = "A friend for those days you just can't type right"
 repository = "https://github.com/djrenren/cargo-flippy/"
 keywords = ["cargo", "clippy", "flippy", "friendship"]

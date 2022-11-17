@@ -3,7 +3,7 @@ use std::{thread::sleep, time::Duration};
 
 use std::io::{stdout, Write};
 
-static frames: [&str; 80] = [
+static FRAMES: [&str; 80] = [
     "(\\°-°)\\ ┬─┬",
     "(\\°-°)\\ ┬─┬",
     "(\\°-°)\\ ┬─┬",
@@ -88,7 +88,7 @@ static frames: [&str; 80] = [
 
 fn main() {
     let mut lock = stdout().lock();
-    for frame in frames {
+    for frame in FRAMES {
         write!(lock, "\r{}", frame).unwrap();
         lock.flush().unwrap();
         sleep(Duration::from_millis(25));
